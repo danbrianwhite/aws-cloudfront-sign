@@ -41,6 +41,11 @@ npm install aws-cloudfront-sign
 * `@return {Object} url.rtmpServerPath` - RTMP formatted server path
 * `@return {Object} url.rtmpStreamName` - Signed RTMP formatted stream name
 
+#### getSignedCookies(url, options)
+* `@param {String} url` - Cloudfront URL to sign
+* `@param {Object} options` - URL signature [options](#options)
+* `@return {Object} signedUrl` - Object with signed CloudFront Cookies
+
 ### Options
 * `expireTime` (**Optional** - Default: 30s) - The time when the URL should
    expire. Accepted values are
